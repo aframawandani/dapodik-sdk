@@ -1,6 +1,6 @@
 # Dapodik SDK
 
-Project ini fork dari dari repo dimasahmad/dapodik-sdk yang developmen-tnya tidak lagi dilanjutkan.
+Project ini adalah fork dari repository dimasahmad/dapodik-sdk yang development-nya tidak lagi dilanjutkan.
 
 ***Unofficial*** Dapodik SDK untuk mengakses API yang tersedia dalam aplikasi Dapodik.
 
