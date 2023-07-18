@@ -18,15 +18,16 @@ Terdapat dua *endpoint* yang tersedia dalam SDK ini:
 
 ***Library* ini masih dalam pengembangan ekstensif dan akan menghadirkan *breaking changes* pada versi-versi berikutnya.** 
 
+## Requirement
+
+PHP >=7.4
+Composer
+
 ## Installation
 
-Library ini dapat dipasang menggunakan Composer:
-
 ```bash
-composer require dimasahmad/dapodik-sdk
+composer require aframawandani/dapodik-sdk
 ```
-
-PHP >=7.4 harus terpasang untuk menjalankan library ini. Tidak ada rencana untuk mendukung versi sebelumnya. 
 
 ## Memulai
 
@@ -66,58 +67,6 @@ $sekolah = json_decode($response->getBody()->__toString())->rows[0];
 
 echo $sekolah->nama;
 ```
-
-## Pengembangan
-
-### Debugging
-
-Anda dapat menggunakan library ini dengan *proxy* seperti [Fiddler](http://www.telerik.com/fiddler) atau [Charles Proxy](https://www.charlesproxy.com/) untuk *debugging request* dan *response* ketika mereka melewati jaringan. Gunakan `setProxyPort` pada objek Auth seperti berikut:
-
-```php
-$dapodik->setProxyPort("localhost:8888");
-```
-
-Kemudian buka *client* *proxy* Anda untuk melihat *request* dan *response* yang dikirim menggunakan *library* ini.
-
-![Screenshot of Fiddler /WebService/getPesertaDidik](https://github.com/dimasahmad/dapodik-sdk/blob/master/docs/images/fiddler.png)
-
-Ini akan sangat membantu ketika *library* ini tidak memberikan hasil yang Anda harapkan untuk menentukan apakah terdapat *bug* pada API atau SDK ini. Oleh karena itu, Anda mungkin diminta untuk memberikan informasi ini ketika mencoba melakukan triase masalah yang Anda ajukan. 
-
-### Tests
-
-*Unit testing* belum diterapkan, namun akan menjadi prioritas tinggi dalam *milestone* pengembangan versi selanjutnya.
-
-Selain *unit testing*, *functional testing* juga akan dibuat. 
-
-## Dokumentasi
-
-- [Wiki](https://github.com/dimasahmad/dapodik-sdk/wiki)
-- [Examples](https://github.com/dimasahmad/dapodik-sdk/wiki/Examples)
-
-## TODO
-
- - [x] WebService Endpoint (/WebService)
-    - [x] Otentikasi menggunakan *bearer token*
-    - [x] Pemetaan model dengan setiap *property*
-        - [x] /getSekolah
-        - [x] /getGtk
-        - [x] /getPesertaDidik
-        - [x] /getPengguna
-        - [x] /getRombonganBelajar
- - [ ] Rest Endpoint (/rest)
-    - [x] Otentikasi menggunakan form login dan cookies
-    - [ ] Pemetaan model untuk setiap *API call*
- - [ ] Model Enum untuk data referensi (mis: jenis kelamin, agama, status sekolah, mata pelajaran, dsb.) agar aplikasi mengetahui kumpulan nilai data yang tersedia pada sebuah property
- - [ ] Dokumentasi untuk setiap method yang tersedia
- - [ ] Unit testing
- - [ ] Functional testing
- - [ ] Continuous integration
- - [x] Implementasi *proxy* untuk memudahkan *debug request* dan *response* menggunakan aplikasi *HTTP debugging* seperti Fiddler atau Charles Proxy
-    
-## Kontribusi
-
-Saya menerima kontribusi untuk library ini. [CONTRIBUTING.md](CONTRIBUTING.md) akan membantu sebelum Anda mulai berkontribusi.
-
 ## Lisensi
 
 Copyright (c) 2020 Dimas Ahmad Eka Putra. All Rights Reserved.
