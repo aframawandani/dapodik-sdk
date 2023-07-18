@@ -38,7 +38,7 @@ class Sekolah extends WebServiceModel
 
     public function getSekolahDetails(): ?\stdClass
     {
-        $response = $this->request("GET", "getSekolah");
+        $response = $this->request("GET", "/getSekolah");
         $this->body = json_decode($response->getBody()->__toString());
         return $this->body->rows;
     }
