@@ -1,14 +1,18 @@
 {
-    "name": "dimasahmad/dapodik-sdk",
+    "name": "aframawandani/dapodik-sdk",
     "type": "library",
     "description": "Unofficial Dapodik SDK",
-    "homepage": "https://github.com/dimasahmad/dapodik-sdk",
+    "homepage": "https://github.com/aframawandani/dapodik-sdk",
     "license": "MIT",
     "authors": [
         {
             "name": "Dimas Ahmad Eka Putra",
             "email": "dimasahmad@gmail.com"
-        }
+        },
+        {
+            "name": "Aziz Firmansyah Ramawandani",
+            "email": "aframawandani@gmail.com"
+        },
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
