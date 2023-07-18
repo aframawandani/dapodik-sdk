@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model\WebService;
+namespace Aframawandani\Dapodik\SDK\Model\WebService;
 
-use DimasAhmad\Dapodik\SDK\Auth\WebService;
-use DimasAhmad\Dapodik\SDK\Model\WebServiceModel;
-use DimasAhmad\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
+use Aframawandani\Dapodik\SDK\Auth\WebService;
+use Aframawandani\Dapodik\SDK\Model\WebServiceModel;
+use Aframawandani\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
 
 /**
  * @method string|null getSekolahId()

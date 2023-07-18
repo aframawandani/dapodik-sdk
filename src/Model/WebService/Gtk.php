@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model\WebService;
+namespace Aframawandani\Dapodik\SDK\Model\WebService;
 
-use DimasAhmad\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
+use Aframawandani\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
 
 /**
  * @method string|null getTahunAjaranId()

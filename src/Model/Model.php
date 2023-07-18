@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model;
+namespace Aframawandani\Dapodik\SDK\Model;
 
-use DimasAhmad\Dapodik\SDK\Exceptions\JSONException;
-use DimasAhmad\Dapodik\SDK\Exceptions\ResponseException;
+use Aframawandani\Dapodik\SDK\Exceptions\JSONException;
+use Aframawandani\Dapodik\SDK\Exceptions\ResponseException;
 use Psr\Http\Message\ResponseInterface;
 
 class Model

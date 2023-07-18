@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model\WebService;
+namespace Aframawandani\Dapodik\SDK\Model\WebService;
 
-use DimasAhmad\Dapodik\SDK\Auth\WebService;
-use DimasAhmad\Dapodik\SDK\Model\WebServiceModel;
+use Aframawandani\Dapodik\SDK\Auth\WebService;
+use Aframawandani\Dapodik\SDK\Model\WebServiceModel;
 
 class PenggunaList extends WebServiceModel
 {
@@ -13,7 +13,7 @@ class PenggunaList extends WebServiceModel
     private array $property;
 
     /**
-     * @var \DimasAhmad\Dapodik\SDK\Model\WebService\Pengguna[]|null
+     * @var \Aframawandani\Dapodik\SDK\Model\WebService\Pengguna[]|null
      */
     public ?array $list;
 

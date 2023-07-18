@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model;
+namespace Aframawandani\Dapodik\SDK\Model;
 
-use DimasAhmad\Dapodik\SDK\Auth\WebService;
+use Aframawandani\Dapodik\SDK\Auth\WebService;
 use Psr\Http\Message\ResponseInterface;
 
 class WebServiceModel extends Model

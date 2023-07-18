@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Model\WebService;
+namespace Aframawandani\Dapodik\SDK\Model\WebService;
 
-use DimasAhmad\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
+use Aframawandani\Dapodik\SDK\Traits\MagicMethods\GetPropertyTrait;
 
 /**
  * @method string|null getRombonganBelajarId()
@@ -17,12 +17,12 @@ class RombonganBelajar
     private \stdClass $property;
 
     /**
-     * @var \DimasAhmad\Dapodik\SDK\Model\WebService\AnggotaRombel[]|null array of AnggotaRombel objects
+     * @var \Aframawandani\Dapodik\SDK\Model\WebService\AnggotaRombel[]|null array of AnggotaRombel objects
      */
     private ?array $anggotaRombel;
 
     /**
-     * @var \DimasAhmad\Dapodik\SDK\Model\WebService\Pembelajaran[]|null array of Pembelajaran objects
+     * @var \Aframawandani\Dapodik\SDK\Model\WebService\Pembelajaran[]|null array of Pembelajaran objects
      */
     private ?array $pembelajaran;
 

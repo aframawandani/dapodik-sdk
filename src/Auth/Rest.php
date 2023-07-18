@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DimasAhmad\Dapodik\SDK\Auth;
+namespace Aframawandani\Dapodik\SDK\Auth;
 
 class Rest extends Auth
 {

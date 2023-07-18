@@ -36,11 +36,11 @@ composer require aframawandani/dapodik-sdk
 Sebelum Anda dapat mengakses *endpoint* WebService, Anda harus mendaftarkan aplikasi Anda melalui halaman Pengaturan -> WebService di dalam aplikasi Dapodik sekolah Anda. Pastikan setting IP sesuai dengan komputer yang akan melakukan koneksi dengan server Dapodik.
 
 ```php
-$dapodik = new \DimasAhmad\Dapodik\SDK\Auth\WebService();
+$dapodik = new \Aframawandani\Dapodik\SDK\Auth\WebService();
 $dapodik->setAccessToken("accessToken"); // Token yang didapatkan saat registrasi aplikasi
 $dapodik->setNpsn("12345678"); // NPSN server Dapodik yang akan diakses
 
-$sekolah = new \DimasAhmad\Dapodik\SDK\Model\WebService\Sekolah($dapodik);
+$sekolah = new \Aframawandani\Dapodik\SDK\Model\WebService\Sekolah($dapodik);
 
 echo $sekolah->getNama();
 ```
@@ -50,7 +50,7 @@ echo $sekolah->getNama();
 Gunakan akun operator sebagai parameter otentikasi.
 
 ```php
-$dapodik = new \DimasAhmad\Dapodik\SDK\Auth\Rest();
+$dapodik = new \Aframawandani\Dapodik\SDK\Auth\Rest();
 $dapodik->setUsername("user@example.com");
 $dapodik->setPassword("password");
 

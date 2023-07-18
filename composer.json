@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DimasAhmad\\Dapodik\\SDK\\": "src/"
+            "Aframawandani\\Dapodik\\SDK\\": "src/"
         }
     }
 }
