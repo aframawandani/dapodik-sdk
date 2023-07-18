@@ -9,20 +9,21 @@ use GuzzleHttp\Cookie\SetCookie;
 class Auth
 {
     protected string $baseUri;
+
     protected ?string $proxyPort;
 
     protected array $headers;
+
     protected CookieJar $cookieJar;
 
     public Client $client;
 
-    public function __construct()
+    public function __construct(string $baseUri = 'http://localhost:5774', array $headers = [])
     {
-        $this->baseUri = "http://localhost:5774/";
-        $this->headers = ["User-Agent" => "DapodikSDK/master-dev"];
+        $this->baseUri = rtrim($baseUri, '/');
+        $this->headers = array_merge([ 'User-Agent' => 'DapodikSDK/master-dev' ], $headers);
         $this->cookieJar = new CookieJar();
         $this->proxyPort = null;
-
         $this->client = $this->setClient();
     }
 
@@ -31,7 +32,9 @@ class Auth
         $clientConfig["base_uri"] = $this->baseUri;
         $clientConfig["headers"] = $this->headers;
         $clientConfig["cookies"] = $this->cookieJar;
-        if (isset($this->proxyPort)) {
+
+        if (isset($this->proxyPort))
+        {
             $clientConfig["verify"] = false;
             $clientConfig["proxy"] = $this->proxyPort;
         }
