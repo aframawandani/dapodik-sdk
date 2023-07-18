@@ -1,7 +1,6 @@
 # Dapodik SDK
 
-**⚰️ DEPRECATED**
-Project ini telah dihentikan dan tidak akan mendapatkan support dan update apapun di kemudian hari.
+Project ini fork dari dari repo dimasahmad/dapodik-sdk yang developmen-tnya tidak lagi dilanjutkan.
 
 ***Unofficial*** Dapodik SDK untuk mengakses API yang tersedia dalam aplikasi Dapodik.
 
