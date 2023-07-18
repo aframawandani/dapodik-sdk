@@ -12,7 +12,7 @@
         {
             "name": "Aziz Firmansyah Ramawandani",
             "email": "aframawandani@gmail.com"
-        },
+        }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
