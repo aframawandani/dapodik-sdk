@@ -16,8 +16,8 @@ class WebServiceModel extends Model
 
     public function request(string $method, string $uri, array $data = [], array $headers = []): ResponseInterface
     {
-        $response = $this->adapter->client->request($method, $uri, [
-            "base_uri" => $this->adapter->getBaseUri() . "WebService/",
+        $response = $this->adapter->client->request($method, "/WebService$uri", [
+            "base_uri" => $this->adapter->getBaseUri(),
             "headers" => [
                 "Authorization" => "Bearer " . $this->adapter->getAccessToken(),
             ],
