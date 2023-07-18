@@ -20,8 +20,8 @@ Terdapat dua *endpoint* yang tersedia dalam SDK ini:
 
 ## Requirement
 
-PHP >=7.4
-Composer
+- PHP >=7.4
+- Composer
 
 ## Installation
 
